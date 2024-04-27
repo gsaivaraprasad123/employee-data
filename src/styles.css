@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* App Component Styles */
+.app-container {
+    padding: 20px;
+}
+
+/* Employee Dashboard Component Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.employee-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.employee-details p {
+    margin: 5px 0;
+}
+
+.delete-btn,
+.edit-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Employee Details Component Styles */
+.details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.employee-details {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
